@@ -104,6 +104,31 @@
   font-size: 0.9rem;
 }
 
+.type-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 0 16px;
+}
+
+.type-filter {
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--steel);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.type-filter:hover,
+.type-filter.active {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+
 .stock {
   list-style: none;
   margin: 0;
