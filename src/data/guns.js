@@ -53,6 +53,24 @@ const GUNS = [
     description:
       'The other pump gun. Twin action bars, a simple safety on the tang, and a price that leaves money for ammunition.',
   },
+  {
+    name: 'Beretta 92FS',
+    type: 'Pistol',
+    caliber: '9mm',
+    price: 649,
+    image: '/guns/beretta-92fs.svg',
+    description:
+      'A full-size service pistol known for its open-slide design, smooth double-action trigger, and comfortable grip.',
+  },
+  {
+    name: 'FN P90',
+    type: 'Rifle',
+    caliber: '5.7×28mm',
+    price: 1299,
+    image: '/guns/fn-p90.svg',
+    description:
+      'A compact bullpup firearm with a distinctive top-mounted magazine and an ergonomic polymer frame.',
+  },
 ]
 
 export default GUNS
