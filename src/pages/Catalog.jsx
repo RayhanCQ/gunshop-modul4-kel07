@@ -2,7 +2,7 @@ import { useState } from 'react'
 import GUNS from '../data/guns.js'
 import GunCard from '../components/GunCard.jsx'
 
-function Catalog() {
+function Catalog({ onAddToCart }) {
   const [selectedType, setSelectedType] = useState('All')
   const types = ['All', ...new Set(GUNS.map((gun) => gun.type))]
   const visibleGuns = selectedType === 'All'
@@ -38,7 +38,9 @@ function Catalog() {
           ))}
         </div>
         <ul className="stock">
-          {visibleGuns.map((gun) => <GunCard key={gun.name} gun={gun} />)}
+          {visibleGuns.map((gun) => (
+            <GunCard key={gun.name} gun={gun} onAddToCart={onAddToCart} />
+          ))}
         </ul>
       </section>
     </>
